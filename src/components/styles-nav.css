@@ -1,0 +1,39 @@
+.nav-container {
+  position: fixed;
+  width: 375px;
+  height: 100vh;
+  padding: 1em;
+  background: #ccc;
+}
+
+.nav-container ul {
+  list-style-type: none;
+  margin-left: 0;
+  display: flex;
+}
+
+.nav-container ul li {
+  width: 100px;
+  height: 100px;
+  margin: 0 1rem 1rem 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-container ul li:hover,
+.nav-container ul li:focus,
+.nav-container ul li:active {
+  transform: scale(1.1);
+}
+
+.me {
+  display: flex;
+}
+
+.portrait-container {
+  width: 50px;
+  margin-right: 0.75rem;
+}
+
+.title {
+  margin-bottom: 0;
+}
