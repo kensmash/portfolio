@@ -3,7 +3,9 @@
   width: 375px;
   height: 100vh;
   padding: 1em;
-  background: #ccc;
+  background: #fafaf8;
+  /*reate inner shadow  https://css-tricks.com/forums/topic/css-box-shadow-inner-shadow-on-the-right/*/
+  box-shadow: inset -10px 0 5px -6px hsla(0, 0%, 0%, 0.07);
 }
 
 .nav-container ul {
@@ -23,6 +25,10 @@
 .nav-container ul li:focus,
 .nav-container ul li:active {
   transform: scale(1.1);
+}
+
+.nav-container ul li img {
+  border: 1px solid #eee;
 }
 
 .me {
