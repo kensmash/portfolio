@@ -8,6 +8,15 @@
   box-shadow: inset -10px 0 5px -6px hsla(0, 0%, 0%, 0.07);
 }
 
+.nav-section {
+  margin: 1em 0;
+}
+
+.nav-title {
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+}
+
 .nav-container ul {
   list-style-type: none;
   margin-left: 0;
@@ -33,6 +42,7 @@
 
 .me {
   display: flex;
+  border-bottom: 1px solid #eee;
 }
 
 .portrait-container {
@@ -42,4 +52,8 @@
 
 .title {
   margin-bottom: 0;
+}
+
+.title-desc {
+  margin-bottom: 1em;
 }

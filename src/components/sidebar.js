@@ -47,13 +47,13 @@ const SideBar = ({ siteTitle }) => {
           <Link to="/">
             <p className="title">Ken Frederick</p>
           </Link>
-          <p>Designer/Developer</p>
+          <p className="title-desc">Designer/Developer</p>
         </div>
       </div>
 
       <BrowserView>
-        <div>
-          <p>WordPress</p>
+        <div className="nav-section">
+          <p className="nav-title">WordPress</p>
           <ul>
             {wordpressItems.map(({ node }) => (
               <Link to={node.fields.slug} key={node.id}>
