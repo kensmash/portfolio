@@ -2,7 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import Image from "./image"
 import Img from "gatsby-image"
-import { useStaticQuery, Link } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
+import { BrowserView, MobileView } from "react-device-detect"
 
 const SideBar = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
@@ -33,7 +34,7 @@ const SideBar = ({ siteTitle }) => {
   `)
 
   const wordpressItems = data.allMarkdownRemark.edges.filter(
-    item => item.node.frontmatter.tag === "WordPress"
+    ({ node }) => node.frontmatter.tag === "WordPress"
   )
 
   return (
@@ -50,10 +51,27 @@ const SideBar = ({ siteTitle }) => {
         </div>
       </div>
 
-      <div>
-        <p>WordPress</p>
+      <BrowserView>
+        <div>
+          <p>WordPress</p>
+          <ul>
+            {wordpressItems.map(({ node }) => (
+              <Link to={node.fields.slug} key={node.id}>
+                <li>
+                  <Img
+                    sizes={
+                      node.frontmatter.thumbnailimage.childImageSharp.sizes
+                    }
+                  />
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>
+      </BrowserView>
+      <MobileView>
         <ul>
-          {wordpressItems.map(({ node }) => (
+          {data.allMarkdownRemark.edges.map(({ node }) => (
             <Link to={node.fields.slug} key={node.id}>
               <li>
                 <Img
@@ -63,7 +81,7 @@ const SideBar = ({ siteTitle }) => {
             </Link>
           ))}
         </ul>
-      </div>
+      </MobileView>
     </nav>
   )
 }
