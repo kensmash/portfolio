@@ -1,11 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Image from "./image"
+import { animated } from "react-spring"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import { BrowserView, MobileView } from "react-device-detect"
 
-const SideBar = ({ siteTitle }) => {
+const SideBar = ({ animation, closeNav }) => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
@@ -37,43 +36,22 @@ const SideBar = ({ siteTitle }) => {
     ({ node }) => node.frontmatter.tag === "WordPress"
   )
 
-  return (
-    <nav className="nav-container">
-      <div className="me">
-        <div className="portrait-container">
-          <Image />
-        </div>
-        <div>
-          <Link to="/">
-            <p className="title">Ken Frederick</p>
-          </Link>
-          <p className="title-desc">Designer/Developer</p>
-        </div>
-      </div>
+  const jsItems = data.allMarkdownRemark.edges.filter(
+    ({ node }) => node.frontmatter.tag === "JavaScript"
+  )
 
-      <BrowserView>
-        <div className="nav-section">
-          <p className="nav-title">WordPress</p>
-          <ul>
-            {wordpressItems.map(({ node }) => (
-              <Link to={node.fields.slug} key={node.id}>
-                <li>
-                  <Img
-                    sizes={
-                      node.frontmatter.thumbnailimage.childImageSharp.sizes
-                    }
-                  />
-                </li>
-              </Link>
-            ))}
-          </ul>
-        </div>
-      </BrowserView>
-      <MobileView>
+  return (
+    <animated.nav className="nav-container" style={animation}>
+      <div className="nav-section">
+        <p className="nav-title">WordPress</p>
         <ul>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Link to={node.fields.slug} key={node.id}>
-              <li>
+          {wordpressItems.map(({ node }) => (
+            <Link
+              to={node.fields.slug}
+              key={node.id}
+              onClick={() => closeNav()}
+            >
+              <li className="thumbnail">
                 <Img
                   sizes={node.frontmatter.thumbnailimage.childImageSharp.sizes}
                 />
@@ -81,17 +59,33 @@ const SideBar = ({ siteTitle }) => {
             </Link>
           ))}
         </ul>
-      </MobileView>
-    </nav>
+        <p className="nav-title">JavaScript</p>
+        <ul>
+          {jsItems.map(({ node }) => (
+            <Link
+              to={node.fields.slug}
+              key={node.id}
+              onClick={() => closeNav()}
+            >
+              <li className="thumbnail">
+                <Img
+                  sizes={node.frontmatter.thumbnailimage.childImageSharp.sizes}
+                />
+              </li>
+            </Link>
+          ))}
+        </ul>
+      </div>
+    </animated.nav>
   )
 }
 
 SideBar.propTypes = {
-  siteTitle: PropTypes.string,
+  showMenu: PropTypes.bool,
 }
 
 SideBar.defaultProps = {
-  siteTitle: ``,
+  showMenu: false,
 }
 
 export default SideBar

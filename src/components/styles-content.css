@@ -1,4 +1,43 @@
 .content-container {
-  margin-left: 375px;
-  padding: 3em;
+  padding-top: 2.5em;
+}
+
+.portfolio-title-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0.55em;
+  margin: 0 auto;
+}
+
+.title-and-meta {
+  padding: 0.5em;
+}
+
+.title-and-meta,
+.featured-image {
+  flex: 1 1 0;
+}
+
+.portfolio-title {
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+.portfolio-text-container {
+  max-width: 1000px;
+  margin: 0 auto 1rem;
+}
+
+.portfolio-content-container {
+  width: 100%;
+  background: #f8f8f8;
+  padding: 1em 1em 2em;
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-text {
+  max-width: 1200px;
+  padding-top: 1em;
+  margin: 0 auto;
 }

@@ -8,9 +8,23 @@ export default ({ data }) => {
   return (
     <>
       <SEO title="Something" />
-      <h1>{post.frontmatter.title}</h1>
-      <Img sizes={post.frontmatter.featuredimage.childImageSharp.sizes} />
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+
+      <div className="portfolio-title-container">
+        <div className="title-and-meta">
+          <h1 className="portfolio-title">Project: {post.frontmatter.title}</h1>
+          <p>URL: url</p>
+        </div>
+
+        <div className="featured-image">
+          <Img sizes={post.frontmatter.featuredimage.childImageSharp.sizes} />
+        </div>
+      </div>
+
+      <div className="portfolio-content-container">
+        <div className="portfolio-text">
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
+      </div>
     </>
   )
 }
