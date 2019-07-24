@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 
 export default ({ data }) => {
   const post = data.markdownRemark
+  console.log(post.frontmatter.url)
   return (
     <>
       <SEO title="Something" />
@@ -12,7 +13,18 @@ export default ({ data }) => {
       <div className="portfolio-title-container">
         <div className="title-and-meta">
           <h1 className="portfolio-title">Project: {post.frontmatter.title}</h1>
-          <p>URL: url</p>
+          {post.frontmatter.url !== "" && (
+            <p>
+              URL:{" "}
+              <a
+                href={post.frontmatter.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {post.frontmatter.url}
+              </a>
+            </p>
+          )}
         </div>
 
         <div className="featured-image">
@@ -35,6 +47,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        url
         featuredimage {
           childImageSharp {
             sizes(quality: 95, maxWidth: 1000) {

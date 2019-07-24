@@ -48,7 +48,6 @@ const Layout = ({ children, location }) => {
             <p className="title-desc">{data.site.siteMetadata.description}</p>
           </div>
           <div style={{ display: "flex" }}>
-            <p className="title-desc">Contact</p>
             <p className="title-menu" onClick={() => navOpenHandler()}>
               Menu
             </p>

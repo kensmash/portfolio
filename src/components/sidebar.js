@@ -37,13 +37,13 @@ const SideBar = ({ animation, closeNav }) => {
   )
 
   const jsItems = data.allMarkdownRemark.edges.filter(
-    ({ node }) => node.frontmatter.tag === "JavaScript"
+    ({ node }) => node.frontmatter.tag === "Print"
   )
 
   return (
     <animated.nav className="nav-container" style={animation}>
       <div className="nav-section">
-        <p className="nav-title">WordPress</p>
+        <p className="nav-title">Web/Apps</p>
         <ul>
           {wordpressItems.map(({ node }) => (
             <Link
@@ -59,7 +59,7 @@ const SideBar = ({ animation, closeNav }) => {
             </Link>
           ))}
         </ul>
-        <p className="nav-title">JavaScript</p>
+        <p className="nav-title">Print/Branding</p>
         <ul>
           {jsItems.map(({ node }) => (
             <Link
