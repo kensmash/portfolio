@@ -33,7 +33,7 @@
 
 .portfolio-title-container {
   width: 100%;
-  padding: 1em 2em 0;
+  padding: 1.5em 2em 0;
 }
 
 .portfolio-title {
@@ -89,9 +89,16 @@
 # Footer
 --------------------------------------------------------------*/
 
+footer {
+  border-top: 1px solid #eee;
+  padding: 1em 0 1em;
+}
+
 footer p {
   font-size: 0.8em;
   text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .footer-source {
