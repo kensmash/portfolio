@@ -11,7 +11,12 @@ export default ({ data }) => {
     <>
       <SEO title={post.frontmatter.title} />
 
-      <div style={{ background: post.frontmatter.backgroundcolor }}>
+      <div
+        className="featured-image-background"
+        style={{
+          background: post.frontmatter.backgroundcolor,
+        }}
+      >
         <div className="featured-image-container">
           <Img sizes={post.frontmatter.featuredimage.childImageSharp.sizes} />
         </div>

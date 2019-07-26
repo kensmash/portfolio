@@ -1,13 +1,13 @@
 ---
-title: "Church Website"
+title: "Band Website"
 date: "201907-26"
-thumbnailimage: "../images/thumbnails/thumbnail-wag.png"
-featuredimage: "../images/featuredimages/featured-image-fpc-2.png"
-desc: "Web site for the First Presbyterian Church of Shelbyville, Kentucky to post events and newsletters, provide information, and collect donations. We settled on WordPress as a content management system, because it would be able to handle all of these requirements at no additional cost to the church. I designed and coded a custom theme using Underscores, Bourbon and Bitters for base styles and the excellent Typi and Mappy-breakpoints libraries to help with reponsive breakpoints and type sizes."
-url: "https://www.fpcshelbyvilleky.com"
+thumbnailimage: "../images/thumbnails/thumbnail-wag.jpg"
+featuredimage: "../images/featuredimages/featured-image-wag.png"
+desc: "Web site for local band The Wag to showcase for music, and make it easy to for people find where they are playing next. The site has a good deal of content, so I decided the best course of action would be to split the navigation into two parts. Those parts of the site I considered most essential (upcoming show information, music, store and contact info) went to the top navigation, and the less frequently updated content went to the site footer. The home page has the band’s next show as the most prominent element. For the site’s look, I wanted to feature photos of the band as much as possible. I used large-sized images of the band as header images on the site, so viewers always get a sense of the energy and fun of the band. I used Photoshop to create the site design. Once the band had approved my mockups, I used the Bootstrap framework to speed up front end development, and take care of the heavy lifting of responsive design. I then programmed the front end design into a custom WordPress theme."
+url: "https://www.thewagband.com"
 sourcecode: ""
 tag: "WordPress"
-backgroundcolor: "#2c2c2c"
+backgroundcolor: "#202020"
 skills:
   [
     { name: "UI/UX Design", type: "ux" },
@@ -17,5 +17,5 @@ skills:
   ]
 ---
 
-![alt text](../images/screenshots/fpc-welcome.jpg "FPC")
-![alt text](../images/responsiveimages/responsive-images-fpc.jpg "FPC")
+![alt text](../images/screenshots/wag-home.png "The Wag")
+![alt text](../images/responsiveimages/responsive-images-wag.jpg "The Wag")
