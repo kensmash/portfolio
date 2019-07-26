@@ -55,11 +55,12 @@
 
 @media only screen and (min-width: 900px) {
   .portfolio-title-container {
-    padding: 1.5em 2em 0;
+    padding: 2em 2em 0;
   }
 }
 
 .portfolio-title {
+  font-weight: normal;
   font-size: 1.5em;
 }
 
