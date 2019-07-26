@@ -23,16 +23,9 @@
 }
 
 .title {
+  color: black;
   margin-bottom: 0;
   padding-bottom: 0;
-}
-
-.title a {
-  /*color: white;*/
-}
-
-.title a:visited {
-  /*color: white;*/
 }
 
 .title-desc {
