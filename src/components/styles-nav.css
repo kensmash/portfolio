@@ -4,12 +4,12 @@
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 10;
-  margin-top: 40px;
-  padding: 0.75em 1em;
+  z-index: 100;
+  padding: 1em 0.75em 1em;
   background: #ececec;
+  margin-top: 40px;
   /* https://stackoverflow.com/questions/17572619/inset-box-shadow-only-on-one-side */
-  box-shadow: -2px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 6px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
 .nav-title {
@@ -41,55 +41,4 @@
 .thumbnail:focus,
 .thumbnail:active {
   transform: scale(1.1);
-}
-
-.me {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  padding-left: 2em;
-  z-index: 25;
-  background: black;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 0.4em;
-}
-
-.me-content {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.portrait-container {
-  width: 50px;
-  margin-right: 0.75rem;
-}
-
-.title {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.title a {
-  color: white;
-}
-
-.title a:visited {
-  color: white;
-}
-
-.title-desc {
-  color: white;
-  margin: 0;
-  padding-left: 1em;
-  font-size: 0.8em;
-}
-
-.title-menu {
-  color: white;
-  font-size: 0.8em;
-  margin: 0;
-  padding-left: 1em;
 }

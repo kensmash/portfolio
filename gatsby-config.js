@@ -56,7 +56,13 @@ module.exports = {
         plugins: [],
       },
     },
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        stripMetadata: true,
+        defaultQuality: 95,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -67,7 +73,8 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 590,
+              quality: 95,
+              maxWidth: 1200,
             },
           },
         ],

@@ -2,13 +2,13 @@
 title: "Church Website"
 date: "201907-22"
 thumbnailimage: "../images/thumbnails/thumbnail-church.png"
-featuredimage: "../images/featured-FPC.jpg"
-url: "https://www.thewagband.com"
+featuredimage: "../images/featuredimages/featured-image-fpc-2.png"
+desc: "Web site for the First Presbyterian Church of Shelbyville, Kentucky to post events and newsletters, provide information, and collect donations. We settled on WordPress as a content management system, because it would be able to handle all of these requirements at no additional cost to the church. I designed and coded a custom theme using Underscores, Bourbon and Bitters for base styles and the excellent Typi and Mappy-breakpoints libraries to help with reponsive breakpoints and type sizes."
+url: "https://www.fpcshelbyvilleky.com"
 tag: "WordPress"
+backgroundcolor: "#97b9ed"
+skills: ["UI/UX Design", "HTML, CSS, PHP", "WordPress", "Photoshop"]
 ---
 
-Website for the First Presbyterian Church of Shelbyville, Kentucky. My clients wanted a site where people could learn about the church and its history, have access to downloads of the newsletter, see events, and be able to make donations. WordPress seemed an obvious choice as a platform, because it would be able to handle all of these things at no additional cost to the church. I built a completely custom theme using Underscores, Bourbon and Bitters. To cover donations, I used the excellent Give plugin.
-
-###Donations
-
-The new site is inviting and easy to read, and the client is able to receive donations. I look forward to working with them further in the future.
+![alt text](../images/screenshots/fpc-welcome.jpg "FPC")
+![alt text](../images/responsiveimages/responsive-images-fpc-simple.jpg "FPC")

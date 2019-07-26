@@ -7,12 +7,14 @@
 
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { useSpring } from "react-spring"
 import Transition from "../components/transition"
+import Header from "./header"
 import SideBar from "./sidebar"
 //styles
 import "./layout.css"
+import "./styles-header.css"
 import "./styles-nav.css"
 import "./styles-content.css"
 
@@ -39,28 +41,15 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-      <div className="me">
-        <div className="me-content">
-          <div style={{ display: "flex" }}>
-            <p className="title">
-              <Link to="/">{data.site.siteMetadata.title}</Link>
-            </p>
-            <p className="title-desc">{data.site.siteMetadata.description}</p>
-          </div>
-          <div style={{ display: "flex" }}>
-            <p className="title-menu" onClick={() => navOpenHandler()}>
-              Menu
-            </p>
-          </div>
-        </div>
-      </div>
+      <SideBar animation={navAnimation} closeNav={() => navOpenHandler()} />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        siteDescription={data.site.siteMetadata.description}
+        openNav={() => navOpenHandler()}
+        navOpen={isNavOpen}
+      />
 
       <Transition location={location}>{children}</Transition>
-      <SideBar
-        siteTitle={data.site.siteMetadata.title}
-        animation={navAnimation}
-        closeNav={() => navOpenHandler()}
-      />
     </>
   )
 }
