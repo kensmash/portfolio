@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Skill = ({ skill }) => <li>{skill}</li>
+const Skill = ({ skill }) => <li>{skill.name}</li>
 
 Skill.propTypes = {
   siteTitle: PropTypes.string,

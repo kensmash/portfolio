@@ -45,14 +45,16 @@
   padding-left: 1em;
 }
 
-/* hamburger menu styling */
+/*--------------------------------------------------------------
+# Hamburger menu styling
+--------------------------------------------------------------*/
 /* from https://codepen.io/designcouch/pen/Atyop */
 
 .hamburger-menu {
   width: 20px;
   height: 20px;
   position: relative;
-  margin: 4px auto 0 7px;
+  margin: 5px auto 0 10px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -69,7 +71,7 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  background: black;
+  background: hsla(0, 0%, 0%, 0.8);
   border-radius: 9px;
   opacity: 1;
   left: 0;

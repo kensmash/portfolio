@@ -6,7 +6,8 @@
   bottom: 0;
   z-index: 100;
   padding: 1em 0.75em 1em;
-  background: #ececec;
+  /*background: #ececec;*/
+  background: white;
   margin-top: 40px;
   /* https://stackoverflow.com/questions/17572619/inset-box-shadow-only-on-one-side */
   box-shadow: -2px 6px 10px 1px rgba(0, 0, 0, 0.2);

@@ -11,9 +11,9 @@ const Header = ({ siteTitle, siteDescription, openNav, navOpen }) => {
     <header className="me">
       <div className="me-content">
         <div style={{ display: "flex" }}>
-          <p className="title">
-            <Link to="/">{siteTitle}</Link>
-          </p>
+          <Link to="/">
+            <p className="title">{siteTitle}</p>
+          </Link>
           <p className="title-desc">{siteDescription}</p>
         </div>
         <div style={{ display: "flex" }} onClick={() => setMenuOpenHandler()}>

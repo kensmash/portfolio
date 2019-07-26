@@ -7,7 +7,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 article,
 aside,
@@ -624,4 +623,25 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+/*--------------------------------------------------------------
+# Links and link colors
+--------------------------------------------------------------*/
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:link {
+  color: #3476c4;
+}
+
+a:hover {
+  color: #4aabe0 !important;
+}
+
+a:visited {
+  color: #3476c4;
 }

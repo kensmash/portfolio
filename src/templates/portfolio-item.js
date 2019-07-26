@@ -8,7 +8,7 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <>
-      <SEO title="Something" />
+      <SEO title={post.frontmatter.title} />
 
       <div style={{ background: post.frontmatter.backgroundcolor }}>
         <div className="featured-image-container">
@@ -16,38 +16,57 @@ export default ({ data }) => {
         </div>
       </div>
 
-      <div className="portfolio-title-container">
-        <div className="title-and-info">
+      <div className="portfolio-info-container">
+        <div className="portfolio-title-container">
           <h1 className="portfolio-title">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.desc}</p>
+        </div>
+
+        <div className="title-and-info">
+          <p className="portfolio-desc">{post.frontmatter.desc}</p>
         </div>
         <div className="meta-container">
-          <div className="meta-list">
-            <ul>
-              <>
-                {post.frontmatter.skills.map(skill => (
-                  <Skill skill={skill} />
-                ))}
-                {post.frontmatter.url !== "" && (
-                  <li>
-                    <a
-                      href={post.frontmatter.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Visit site
-                    </a>
-                  </li>
-                )}
-              </>
-            </ul>
-          </div>
+          <ul className="meta-list">
+            <>
+              {post.frontmatter.skills.map(skill => (
+                <Skill key={skill.name} skill={skill} />
+              ))}
+              {post.frontmatter.url !== "" && (
+                <li>
+                  <a
+                    href={post.frontmatter.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit site
+                  </a>
+                </li>
+              )}
+              {post.frontmatter.sourcecode !== "" && (
+                <li>
+                  <a
+                    href={post.frontmatter.sourcecode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source on GitHub
+                  </a>
+                </li>
+              )}
+            </>
+          </ul>
         </div>
       </div>
 
       <div className="markdown">
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
+
+      <footer>
+        <p>
+          Built with Gatsby{" "}
+          <span className="footer-source">Source on GitHub</span>
+        </p>
+      </footer>
     </>
   )
 }
@@ -59,9 +78,13 @@ export const query = graphql`
       frontmatter {
         title
         url
+        sourcecode
         desc
         backgroundcolor
-        skills
+        skills {
+          type
+          name
+        }
         featuredimage {
           childImageSharp {
             sizes(quality: 95, maxWidth: 1000) {
