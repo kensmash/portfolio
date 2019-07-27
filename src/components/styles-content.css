@@ -103,7 +103,7 @@
   font-size: 0.9em;
   color: #848484;
   padding: 0 0 0.6em 0;
-  border-bottom: 1px dashed #848484;
+  border-bottom: 1px dashed #ccc;
 }
 
 .meta-list li svg {
@@ -133,6 +133,7 @@
 footer {
   border-top: 1px solid #eee;
   padding: 1em 0 1em;
+  background: #f8f8f8;
 }
 
 footer p {
