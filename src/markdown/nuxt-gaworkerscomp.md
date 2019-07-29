@@ -11,8 +11,9 @@ backgroundcolor: "#0b0b0b"
 skills:
   [
     { name: "UI/UX Design", type: "ux" },
+    { name: "Full-Stack Development", type: "skill" },
     { name: "Vue.js, Nuxt.js, JavaScript", type: "development" },
-    { name: "Full-Stack Development", type: "cms" },
+    { name: "Node, Express, MongoDB", type: "development" },
     { name: "Photoshop", type: "software" },
   ]
 ---

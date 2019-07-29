@@ -86,13 +86,16 @@ export default ({ data }) => {
         </div>
       </animated.div>
       <Waypoint
-        bottomOffset="30%"
+        bottomOffset="15%"
         onEnter={() => {
           if (!mdOn) mdToggle(true)
         }}
       />
       <animated.div className="markdown" style={markDownAnimation}>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          className="markdown-content"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
       </animated.div>
 
       <footer>

@@ -19,7 +19,7 @@
 
 @media only screen and (min-width: 900px) {
   .featured-image-background {
-    height: 500px;
+    height: 480px;
   }
   .featured-image-container {
     padding: 1.75em 0;
@@ -44,7 +44,7 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 1000px;
-    padding: 2em 1.5em 0;
+    padding: 2.75em 1.5em 0;
     margin: 0 auto;
   }
 
@@ -126,6 +126,11 @@
   padding: 0.75em 2em;
 }
 
+.markdown-content p {
+  font-size: 0.8em;
+  color: gray;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -133,7 +138,7 @@
 footer {
   border-top: 1px solid #eee;
   padding: 1em 0 1em;
-  background: #f8f8f8;
+  /*background: #f8f8f8;*/
 }
 
 footer p {
