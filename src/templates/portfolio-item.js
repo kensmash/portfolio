@@ -13,7 +13,7 @@ export default ({ data }) => {
   const animation = useSpring({
     opacity: on ? 1 : 0,
     transform: on ? "translate3d(0,0,0)" : "translate3d(0, 50%, 0)",
-    config: config.molasses,
+    config: config.slow,
   })
   const markDownAnimation = useSpring({
     opacity: mdOn ? 1 : 0,
@@ -37,7 +37,7 @@ export default ({ data }) => {
       </div>
 
       <Waypoint
-        bottomOffset="50%"
+        bottomOffset="35%"
         onEnter={() => {
           if (!on) toggle(true)
         }}

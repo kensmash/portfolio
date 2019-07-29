@@ -32,12 +32,12 @@ const SideBar = ({ animation, closeNav }) => {
     }
   `)
 
-  const wordpressItems = data.allMarkdownRemark.edges.filter(
-    ({ node }) => node.frontmatter.tag === "WordPress"
+  const webItems = data.allMarkdownRemark.edges.filter(
+    ({ node }) => node.frontmatter.tag === "web"
   )
 
-  const jsItems = data.allMarkdownRemark.edges.filter(
-    ({ node }) => node.frontmatter.tag === "Print"
+  const printItems = data.allMarkdownRemark.edges.filter(
+    ({ node }) => node.frontmatter.tag === "print"
   )
 
   return (
@@ -45,7 +45,7 @@ const SideBar = ({ animation, closeNav }) => {
       <div className="nav-section">
         <p className="nav-title">Web/Apps</p>
         <ul>
-          {wordpressItems.map(({ node }) => (
+          {webItems.map(({ node }) => (
             <Link
               to={node.fields.slug}
               key={node.id}
@@ -61,7 +61,7 @@ const SideBar = ({ animation, closeNav }) => {
         </ul>
         <p className="nav-title">Print/Branding</p>
         <ul>
-          {jsItems.map(({ node }) => (
+          {printItems.map(({ node }) => (
             <Link
               to={node.fields.slug}
               key={node.id}

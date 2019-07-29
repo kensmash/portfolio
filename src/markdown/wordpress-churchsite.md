@@ -6,7 +6,7 @@ featuredimage: "../images/featuredimages/featured-image-fpc.jpg"
 desc: "Website for the First Presbyterian Church of Shelbyville, Kentucky to post events and newsletters, provide information, and collect donations. We settled on WordPress as a content management system, because it would be able to handle all of these requirements at no additional cost to the church. I designed and coded a custom theme using Underscores, Bourbon and Bitters for base styles and the excellent Typi and Mappy-breakpoints libraries to help with reponsive breakpoints and type sizes."
 url: "https://www.fpcshelbyvilleky.com"
 sourcecode: ""
-tag: "WordPress"
+tag: "web"
 backgroundcolor: "#97b9ed"
 skills:
   [
