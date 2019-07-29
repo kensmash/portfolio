@@ -1,11 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
+import { Waypoint } from "react-waypoint"
+import { animated, useSpring, config } from "react-spring"
 import Img from "gatsby-image"
 import { FaBeer } from "react-icons/fa"
 import Skill from "../components/skill"
 import SEO from "../components/seo"
 
 export default ({ data }) => {
+  const [on, toggle] = useState(false)
+  const [mdOn, mdToggle] = useState(false)
+  const animation = useSpring({
+    opacity: on ? 1 : 0,
+    transform: on ? "translate3d(0,0,0)" : "translate3d(0, 50%, 0)",
+    config: config.molasses,
+  })
+  const markDownAnimation = useSpring({
+    opacity: mdOn ? 1 : 0,
+    transform: mdOn ? "translate3d(0,0,0)" : "translate3d(0, 50%, 0)",
+    config: config.molasses,
+  })
   const post = data.markdownRemark
   return (
     <>
@@ -22,7 +36,14 @@ export default ({ data }) => {
         </div>
       </div>
 
-      <div className="portfolio-info-container">
+      <Waypoint
+        bottomOffset="50%"
+        onEnter={() => {
+          if (!on) toggle(true)
+        }}
+      />
+
+      <animated.div className="portfolio-info-container" style={animation}>
         <div className="portfolio-title-container">
           <h1 className="portfolio-title">{post.frontmatter.title}</h1>
         </div>
@@ -63,11 +84,16 @@ export default ({ data }) => {
             </>
           </ul>
         </div>
-      </div>
-
-      <div className="markdown">
+      </animated.div>
+      <Waypoint
+        bottomOffset="30%"
+        onEnter={() => {
+          if (!mdOn) mdToggle(true)
+        }}
+      />
+      <animated.div className="markdown" style={markDownAnimation}>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      </animated.div>
 
       <footer>
         <p>
