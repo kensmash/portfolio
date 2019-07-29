@@ -12,7 +12,7 @@ skills:
   [
     { name: "UI/UX Design", type: "ux" },
     { name: "Full-Stack Development", type: "skill" },
-    { name: "Vue.js, Nuxt.js, JavaScript", type: "development" },
+    { name: "Vue.js, Nuxt.js", type: "development" },
     { name: "Node, Express, MongoDB", type: "development" },
     { name: "Photoshop", type: "software" },
   ]
