@@ -7,7 +7,8 @@ desc: "Website for the First Presbyterian Church of Shelbyville, Kentucky to pos
 url: "https://www.fpcshelbyvilleky.com"
 sourcecode: ""
 tag: "web"
-backgroundcolor: "#97b9ed"
+backgroundcolorlight: "#c7daf3"
+backgroundcolordark: "#97b9ed"
 skills:
   [
     { name: "UI/UX Design", type: "ux" },

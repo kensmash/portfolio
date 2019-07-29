@@ -7,7 +7,8 @@ desc: "An informational website for the Georgia Worker’s Compensation system, 
 url: "https://www.gaworkerscomp.com/"
 sourcecode: ""
 tag: "web"
-backgroundcolor: "#0b0b0b"
+backgroundcolorlight: "#212121"
+backgroundcolordark: "#212121"
 skills:
   [
     { name: "UI/UX Design", type: "ux" },

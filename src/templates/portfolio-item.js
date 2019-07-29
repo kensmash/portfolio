@@ -28,7 +28,10 @@ export default ({ data }) => {
       <div
         className="featured-image-background"
         style={{
-          background: post.frontmatter.backgroundcolor,
+          backgroundImage: `radial-gradient(
+      ${post.frontmatter.backgroundcolorlight},
+      ${post.frontmatter.backgroundcolordark}
+    )`,
         }}
       >
         <div className="featured-image-container">
@@ -133,7 +136,8 @@ export const query = graphql`
         url
         sourcecode
         desc
-        backgroundcolor
+        backgroundcolorlight
+        backgroundcolordark
         skills {
           type
           name

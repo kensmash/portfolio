@@ -7,7 +7,8 @@ desc: "Online trivia game I built for fun and learning. The app to connects to t
 url: "https://opentdb-player.herokuapp.com"
 sourcecode: ""
 tag: "web"
-backgroundcolor: "#212121"
+backgroundcolorlight: "#454544"
+backgroundcolordark: "#212121"
 skills:
   [
     { name: "UI/UX Design", type: "ux" },

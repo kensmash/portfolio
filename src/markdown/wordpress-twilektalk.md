@@ -11,7 +11,8 @@ With hosting and an RSS feed for the podcast, we were able to submit the podcast
 url: "https://www.twilektalk.com"
 sourcecode: ""
 tag: "web"
-backgroundcolor: "#130410"
+backgroundcolorlight: "#3f0427"
+backgroundcolordark: "#1b0111"
 skills:
   [
     { name: "UI/UX Design", type: "ux" },

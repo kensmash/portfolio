@@ -63,6 +63,13 @@
   .portfolio-title-container {
     padding: 2em 2em 0;
   }
+
+  .featured-image-container .gatsby-image-wrapper img {
+    -webkit-box-shadow: 10px 10px 5px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px -11px rgba(0, 0, 0, 0.75);
+    border-radius: 1em 1em 0 0;
+  }
 }
 
 .portfolio-title {
