@@ -3,9 +3,10 @@ import PropTypes from "prop-types"
 import { FaBeer } from "react-icons/fa"
 
 const Skill = ({ skill }) => {
+  let skillIcon = <FaBeer />
   return (
     <li>
-      <FaBeer />
+      {skillIcon}
       <span className="skill-name">{skill.name}</span>
     </li>
   )

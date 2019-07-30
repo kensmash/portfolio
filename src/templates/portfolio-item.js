@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Waypoint } from "react-waypoint"
 import { animated, useSpring, config } from "react-spring"
 import Img from "gatsby-image"
-import { FaBeer } from "react-icons/fa"
+import { FaLink, FaGithub } from "react-icons/fa"
 import Skill from "../components/skill"
 import SEO from "../components/seo"
 
@@ -21,6 +21,7 @@ export default ({ data }) => {
     config: config.molasses,
   })
   const post = data.markdownRemark
+
   return (
     <>
       <SEO title={post.frontmatter.title} />
@@ -67,7 +68,7 @@ export default ({ data }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaBeer />
+                    <FaLink />
                     <span className="skill-name">Visit site</span>
                   </a>
                 </li>
@@ -79,7 +80,7 @@ export default ({ data }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaBeer />
+                    <FaGithub />
                     <span className="skill-name">Source on GitHub</span>
                   </a>
                 </li>
@@ -89,7 +90,7 @@ export default ({ data }) => {
         </div>
       </animated.div>
       <Waypoint
-        bottomOffset="10%"
+        bottomOffset="15%"
         onEnter={() => {
           if (!mdOn) mdToggle(true)
         }}

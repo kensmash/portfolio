@@ -17,11 +17,12 @@ import "./layout.css"
 import "./styles-header.css"
 import "./styles-nav.css"
 import "./styles-content.css"
+import "./styles-home.css"
 
 const Layout = ({ children, location }) => {
   const [isNavOpen, setNavOpen] = useState(false)
   const navAnimation = useSpring({
-    transform: isNavOpen ? `translate3d(0%,0,0)` : `translate3d(30%,0,0)`,
+    transform: isNavOpen ? `translate3d(0%,0,0)` : `translate3d(50%,0,0)`,
   })
 
   const navOpenHandler = () => {

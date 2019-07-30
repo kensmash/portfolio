@@ -18,4 +18,4 @@ skills:
   ]
 ---
 
-![alt text](../images/responsiveimages/responsive-images-wag.jpg "The Wag")
+![alt text](../images/screenshots/wag-home.jpg "The Wag")
