@@ -11,11 +11,23 @@
 }
 
 .nav-section {
-  width: 320px;
+  width: 150px;
   background: white;
   padding-left: 1.5em;
   /* https://stackoverflow.com/questions/17572619/inset-box-shadow-only-on-one-side */
   box-shadow: -2px 6px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 600px) {
+  .nav-section {
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .nav-section {
+    width: 320px;
+  }
 }
 
 .nav-title {
@@ -35,8 +47,14 @@
 .thumbnail {
   width: 90px;
   height: 90px;
-  margin: 0 0.4rem 0.75rem 0.4rem;
+  margin: 0 0.4rem 0.75rem 0;
   transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (min-width: 600px) {
+  .thumbnail {
+    margin: 0 0.4rem 0.75rem 0.4rem;
+  }
 }
 
 .thumbnail img {
@@ -53,15 +71,31 @@
 # Got Grid?
 --------------------------------------------------------------*/
 @supports (grid-area: auto) {
-  .nav-container ul {
-    display: grid;
-    grid-template-columns: 100px 100px;
-    grid-gap: 16px;
+  @media only screen and (min-width: 600px) {
+    .nav-container ul {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      grid-gap: 16px;
+    }
+
+    .thumbnail {
+      width: 100px;
+      height: 100px;
+      margin: 0;
+    }
   }
 
-  .thumbnail {
-    width: 100px;
-    height: 100px;
-    margin: 0;
+  @media only screen and (min-width: 900px) {
+    .nav-container ul {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      grid-gap: 16px;
+    }
+
+    .thumbnail {
+      width: 100px;
+      height: 100px;
+      margin: 0;
+    }
   }
 }

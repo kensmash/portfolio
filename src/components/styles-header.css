@@ -6,7 +6,13 @@
   background: white;
   /*border-bottom: 1px solid rgba(255, 255, 255, 0.5);*/
   border-bottom: 1px solid #eee;
-  padding: 0.4em;
+  padding: 0.6em 0.3em 0.4em;
+}
+
+@media only screen and (min-width: 600px) {
+  .me {
+    padding: 0.4em;
+  }
 }
 
 .me-content {
@@ -30,10 +36,17 @@
 }
 
 .title-desc {
-  color: hsla(0, 0%, 0%, 0.8);
-  margin: 0;
-  padding-left: 1em;
-  font-size: 0.8em;
+  display: none;
+}
+
+@media only screen and (min-width: 375px) {
+  .title-desc {
+    display: inherit;
+    color: hsla(0, 0%, 0%, 0.8);
+    margin: 0;
+    padding-left: 1em;
+    font-size: 0.8em;
+  }
 }
 
 .title-menu {
