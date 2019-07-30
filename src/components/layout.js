@@ -21,7 +21,7 @@ import "./styles-content.css"
 const Layout = ({ children, location }) => {
   const [isNavOpen, setNavOpen] = useState(false)
   const navAnimation = useSpring({
-    transform: isNavOpen ? `translate3d(0,0,0)` : `translate3d(100%,0,0)`,
+    transform: isNavOpen ? `translate3d(0%,0,0)` : `translate3d(50%,0,0)`,
   })
 
   const navOpenHandler = () => {
