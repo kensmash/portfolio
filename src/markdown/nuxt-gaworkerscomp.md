@@ -19,7 +19,7 @@ skills:
   ]
 ---
 
-![alt text](../images/screenshots/gaworkers-home.jpg "GA Workers Comp")
 ![alt text](../images/responsiveimages/responsive-images-gaworkers.jpg "GA Workers Comp")
+
 ![alt text](../images/screenshots/gaworkers-admin-article.png "GA Workers Admin")
 Administrative page for entering a new article

@@ -22,5 +22,4 @@ skills:
   ]
 ---
 
-![alt text](../images/screenshots/twilektalk-home.jpg "Twilek Talk")
 ![alt text](../images/responsiveimages/responsive-images-twilek.jpg "Twilek Talk")

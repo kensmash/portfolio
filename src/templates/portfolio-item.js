@@ -89,7 +89,7 @@ export default ({ data }) => {
         </div>
       </animated.div>
       <Waypoint
-        bottomOffset="15%"
+        bottomOffset="10%"
         onEnter={() => {
           if (!mdOn) mdToggle(true)
         }}

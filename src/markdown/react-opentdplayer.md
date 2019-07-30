@@ -17,5 +17,4 @@ skills:
   ]
 ---
 
-![alt text](../images/screenshots/opentdb-question.png "Open Trivia Database Player")
 ![alt text](../images/responsiveimages/responsive-images-opentdb.png "Open Trivia Database Player")
