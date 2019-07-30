@@ -7,8 +7,8 @@ desc: "Website for local band The Wag to showcase for music, and make it easy to
 url: "https://www.thewagband.com"
 sourcecode: ""
 tag: "web"
-backgroundcolorlight: "#212121"
-backgroundcolordark: "#212121"
+backgroundcolorlight: "#323131"
+backgroundcolordark: "#202020"
 skills:
   [
     { name: "UI/UX Design", type: "ux" },
