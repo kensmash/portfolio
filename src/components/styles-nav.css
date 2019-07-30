@@ -58,7 +58,7 @@
 }
 
 .thumbnail img {
-  border-radius: 0.3em;
+  /*border-radius: 0.3em;*/
 }
 
 .thumbnail:hover,

@@ -16,6 +16,6 @@ skills:
   ]
 ---
 
-![alt text](../images/print/main-image-ACA.png "GA Workers Comp")
+![alt text](../images/print/main-image-ACA.png "Vision Paper page 1")
 
-![alt text](../images/print/main-image-ACA-pg2.png "GA Workers Admin")
+![alt text](../images/print/main-image-ACA-pg2.png "Vision Paper page 2")

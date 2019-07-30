@@ -15,10 +15,10 @@ backgroundcolorlight: "#3f0427"
 backgroundcolordark: "#1b0111"
 skills:
   [
-    { name: "UI/UX Design", type: "ux" },
+    { name: "WordPress Theme Development", type: "cms" },
+    { name: "UX/UI Design", type: "skill" },
     { name: "HTML, CSS, PHP", type: "development" },
-    { name: "WordPress", type: "cms" },
-    { name: "Photoshop", type: "software" },
+    { name: "Photoshop, Illustrator, Sketch", type: "software" },
   ]
 ---
 

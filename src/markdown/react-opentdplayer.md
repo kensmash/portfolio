@@ -11,7 +11,6 @@ backgroundcolorlight: "#454544"
 backgroundcolordark: "#212121"
 skills:
   [
-    { name: "UI/UX Design", type: "ux" },
     { name: "Front-End Development", type: "skill" },
     { name: "React.js", type: "development" },
   ]
