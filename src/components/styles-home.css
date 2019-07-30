@@ -1,5 +1,11 @@
 .home-content {
-  padding: 3em;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.home-text {
+  padding: 3em 0;
 }
 
 .home-nav-section ul {
@@ -9,7 +15,7 @@
 }
 
 .home-thumbnail {
-  transition: all 0.2s ease-in-out;
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
+  margin: 0 0.75rem 0.75rem 0;
 }

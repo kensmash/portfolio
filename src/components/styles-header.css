@@ -3,9 +3,9 @@
   width: 100%;
   display: flex;
   z-index: 25;
-  background: white;
-  /*border-bottom: 1px solid rgba(255, 255, 255, 0.5);*/
-  border-bottom: 1px solid #eee;
+  background: #252626;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /*border-bottom: 1px solid #eee;*/
   padding: 0.6em 0.3em 0.4em;
 }
 
@@ -30,7 +30,8 @@
 }
 
 .title {
-  color: hsla(0, 0%, 0%, 0.8);
+  /*color: hsla(0, 0%, 0%, 0.8);*/
+  color: white;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -43,6 +44,7 @@
   .title-desc {
     display: inherit;
     color: hsla(0, 0%, 0%, 0.8);
+    color: white;
     margin: 0;
     padding-left: 1em;
     font-size: 0.8em;
@@ -51,6 +53,7 @@
 
 .title-menu {
   color: hsla(0, 0%, 0%, 0.8);
+  color: white;
   font-size: 0.8em;
   margin: 0;
   padding-left: 1em;
@@ -83,6 +86,7 @@
   height: 3px;
   width: 100%;
   background: hsla(0, 0%, 0%, 0.8);
+  background: white;
   border-radius: 9px;
   opacity: 1;
   left: 0;
