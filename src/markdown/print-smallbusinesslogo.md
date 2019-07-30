@@ -1,14 +1,14 @@
 ---
 title: "Small Business Logo"
 date: "201907-30"
-thumbnailimage: "../images/thumbnails/thumbnail-logo-lilygardens.png"
-featuredimage: "../images/featuredimages/featured-image-lilygardenslogo.png"
-desc: "My client needed a logo represent her company. She initially suggested a drawing of a madonna lily, but I felt that a close rendering of a lily, while visually beautiful, would not resize well. I started working by making sketches of a lily flower, then refining and simplifying until I got to a mark that i liked. This mark, a simple interpretation of a lily flower opening, would resize nicely, work in black and white or color. I chose Gill Sans Light, an elegant sans serif font, to pair with the mark. The logo was also intended for use across different lines. I came up with treatments for logo use in various products. The simple logo lends itself well to different color treatments."
+thumbnailimage: "../images/thumbnails/thumbnail-logo-cst.png"
+featuredimage: "../images/featuredimages/featured-image-cst.png"
+desc: "Logo for a new division of a small business solutions company. He provided me with a few initial concepts he had come up with, but his primary requirement was that the logo use the colors of the American flag. I did pages of sketches for this logo, covering everything from simple type treatments to drawings of a trowel and chisel. In the end, I realized a simple arrangement of squares, one red, one white (or light grey if the background was white, one blue) solved all the requirements of the logo mark – simple and memorable, it works well at different sizes, and incorporates the colors of the flag. The font is Aksidenz Grotesk, a precise, well-crafted geometric sans serif – embodying the qualities I wanted the logo to communicate about the company."
 url: ""
 sourcecode: ""
 tag: "print"
-backgroundcolorlight: "#5aac1c"
-backgroundcolordark: "#416625"
+backgroundcolorlight: "#5e7eba"
+backgroundcolordark: "#2f508f"
 skills:
   [
     { name: "Graphic Design", type: "ux" },
@@ -17,4 +17,4 @@ skills:
   ]
 ---
 
-![alt text](../images/logos/Lily-Gardens-logo-colors.png "Lily Gardens")
+![alt text](../images/logos/cst-logos.png "CST logo")
