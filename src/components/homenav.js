@@ -41,7 +41,6 @@ const HomeNav = () => {
   return (
     <nav className="home-nav-container">
       <div className="home-nav-section">
-        <p className="nav-title">Web/Apps</p>
         <ul>
           {webItems.map(({ node }) => (
             <Link to={node.fields.slug} key={node.id}>
@@ -53,7 +52,7 @@ const HomeNav = () => {
             </Link>
           ))}
         </ul>
-        <p className="nav-title">Print/Branding</p>
+
         <ul>
           {printItems.map(({ node }) => (
             <Link to={node.fields.slug} key={node.id}>
