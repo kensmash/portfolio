@@ -1,13 +1,12 @@
 import React from "react"
 import SEO from "../components/seo"
 import HomeNav from "../components/homenav"
-import Footer from "../components/footer"
 
 const IndexPage = () => (
   <>
     <SEO title="Home" />
     <div className="home-top">
-      <div className="home-content-container home-text">
+      <div className="home-text">
         <h1>Hi, I’m Ken.</h1>
         <p>
           I’m a graphic and web designer who also enjoys coding (mainly so i can
@@ -27,7 +26,6 @@ const IndexPage = () => (
       <div className="home-content-container">
         <HomeNav />
       </div>
-      <Footer />
     </div>
   </>
 )

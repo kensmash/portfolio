@@ -10,7 +10,10 @@
     rgba(37, 38, 38, 1) 100%
   );
   color: white;
-  height: 50vh;
+  height: 47vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-content-container {
@@ -29,7 +32,8 @@
 }
 
 .home-text {
-  padding: 1.5em 1em;
+  width: 100%;
+  max-width: 600px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -44,11 +48,11 @@
 
 .home-nav-section {
   background: white;
-  height: 50vh;
+  height: 53vh;
 }
 
 .home-nav-container {
-  padding: 0 2em;
+  padding: 0 2em 1em;
 }
 
 .home-nav-section ul {
@@ -92,7 +96,7 @@
 .latest-work-title {
   text-align: center;
   font-size: 0.95em;
-  padding: 1em 0 0;
+  padding: 1.5em 0 0;
 }
 
 .homethumb-caption {
