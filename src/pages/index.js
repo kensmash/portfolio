@@ -23,7 +23,7 @@ const IndexPage = () => (
 
     <div className="home-nav-section">
       <div className="triangle" />
-      <p>Recent work</p>
+      <p className="latest-work-title">Below is some of my recent work.</p>
       <div className="home-content-container">
         <HomeNav />
       </div>
