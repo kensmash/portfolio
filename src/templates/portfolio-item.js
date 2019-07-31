@@ -5,6 +5,7 @@ import { animated, useSpring, config } from "react-spring"
 import Img from "gatsby-image"
 import { FaLink, FaGithub } from "react-icons/fa"
 import Skill from "../components/skill"
+import Footer from "../components/footer"
 import SEO from "../components/seo"
 
 export default ({ data }) => {
@@ -102,28 +103,7 @@ export default ({ data }) => {
         />
       </animated.div>
 
-      <footer>
-        <p>
-          Built with{" "}
-          <a
-            href="https://www.gatsbyjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Gatsby
-          </a>
-          <span className="footer-source">
-            Source on{" "}
-            <a
-              href="https://github.com/kensmash/portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </span>
-        </p>
-      </footer>
+      <Footer />
     </>
   )
 }

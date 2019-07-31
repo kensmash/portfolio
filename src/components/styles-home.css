@@ -1,4 +1,4 @@
-.home-content {
+.home-content-container {
   margin: 0 auto;
   width: 100%;
   max-width: 1000px;
@@ -6,6 +6,10 @@
 
 .home-text {
   padding: 3em 0;
+}
+
+.home-nav-section {
+  background: #f8f8f8;
 }
 
 .home-nav-section ul {

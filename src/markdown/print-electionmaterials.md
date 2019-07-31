@@ -2,6 +2,7 @@
 title: "Election Materials Redesign"
 date: "201907-30"
 thumbnailimage: "../images/thumbnails/thumbnail-election.png"
+homepagethumb: "../images/thumbnails/homepage-election.png"
 featuredimage: "../images/featuredimages/featured-image-election.png"
 desc: "Newspaper ad and postcard mailer for the Shelby County Democratic party for the 2016 general election. My client was concerned that the materials, as designed, were not impactful enough. I created a new design, using bold typography and simple colors, with the goal of maximum impact and readability."
 url: ""
