@@ -30,24 +30,23 @@ const HomeNav = () => {
     }
   `)
 
-  const recentItems = data.allMarkdownRemark.edges.slice(0, 5)
+  const recentItems = data.allMarkdownRemark.edges
 
   return (
     <nav className="home-nav-container">
-      <div className="home-nav-section">
-        <ul>
-          {recentItems.map(({ node }) => (
-            <Link to={node.fields.slug} key={node.id}>
-              <li className="thumbnail home-thumbnail">
+      <ul>
+        {recentItems.map(({ node }) => (
+          <li className="home-thumbnail-container" key={node.id}>
+            <div className="home-thumbnail">
+              <Link to={node.fields.slug}>
                 <Img
                   sizes={node.frontmatter.homepagethumb.childImageSharp.sizes}
                 />
-                {node.frontmatter.title}
-              </li>
-            </Link>
-          ))}
-        </ul>
-      </div>
+              </Link>
+            </div>
+          </li>
+        ))}
+      </ul>
     </nav>
   )
 }

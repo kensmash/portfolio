@@ -8,7 +8,7 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { useSpring } from "react-spring"
+import { useSpring, useTransition } from "react-spring"
 import Transition from "../components/transition"
 import Header from "./header"
 import SideBar from "./sidebar"
@@ -40,15 +40,29 @@ const Layout = ({ children, location }) => {
     }
   `)
 
+  const transition = useTransition(location.pathname !== "/", null, {
+    from: { opacity: 0, transform: `translate3d(0, -40px, 0)` },
+    enter: { opacity: 1, transform: `translate3d(0, 0px, 0)` },
+    leave: { opacity: 0, transform: `translate3d(0, -40px, 0)` },
+  })
+
   return (
     <>
       <SideBar animation={navAnimation} closeNav={() => navOpenHandler()} />
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        siteDescription={data.site.siteMetadata.description}
-        openNav={() => navOpenHandler()}
-        navOpen={isNavOpen}
-      />
+
+      {transition.map(
+        ({ item, key, props: animation }) =>
+          item && (
+            <Header
+              key={key}
+              animation={animation}
+              siteTitle={data.site.siteMetadata.title}
+              siteDescription={data.site.siteMetadata.description}
+              openNav={() => navOpenHandler()}
+              navOpen={isNavOpen}
+            />
+          )
+      )}
 
       <Transition location={location}>{children}</Transition>
     </>

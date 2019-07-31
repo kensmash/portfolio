@@ -1,3 +1,7 @@
+/*--------------------------------------------------------------
+# Top Text
+--------------------------------------------------------------*/
+
 .home-content-container {
   margin: 0 auto;
   width: 100%;
@@ -5,21 +9,70 @@
 }
 
 .home-text {
-  padding: 3em 0;
+  padding: 0 1.5em 1em;
 }
 
-.home-nav-section {
-  background: #f8f8f8;
+@media only screen and (min-width: 600px) {
+  .home-text {
+    padding: 0 1em 1em;
+  }
+}
+
+/*--------------------------------------------------------------
+# Nav Thumbnails
+--------------------------------------------------------------*/
+
+.home-nav-container {
+  padding: 0.5em 0 2em;
 }
 
 .home-nav-section ul {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   list-style-type: none;
 }
 
+.home-thumbnail-container {
+  width: 50%;
+  padding: 0.25em 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .home-thumbnail-container {
+    width: 33%;
+    padding: 1em;
+  }
+}
+
 .home-thumbnail {
-  width: 140px;
-  height: 140px;
-  margin: 0 0.75rem 0.75rem 0;
+  transition: all 0.2s ease-in-out;
+  background: white;
+}
+
+.home-thumbnail img {
+  border-radius: 0em;
+}
+
+.home-thumbnail:hover,
+.home-thumbnail:focus,
+.home-thumbnail:active {
+  transform: scale(1.03);
+}
+
+/*--------------------------------------------------------------
+# Nav section text
+--------------------------------------------------------------*/
+
+.latest-work-title {
+  text-align: center;
+  font-size: 0.85em;
+  padding: 1em 0 0;
+}
+
+.homethumb-caption {
+  padding: 0.5em 0.5em 1em;
+  font-size: 0.75em;
+  line-height: 1.4em;
+  text-align: center;
 }

@@ -21,7 +21,6 @@ const IndexPage = () => (
     </div>
     <div className="home-nav-section">
       <div className="home-content-container">
-        <p>Here’s some of my latest work.</p>
         <HomeNav />
       </div>
     </div>

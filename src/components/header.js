@@ -1,14 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import { animated } from "react-spring"
 
-const Header = ({ siteTitle, siteDescription, openNav, navOpen }) => {
+const Header = ({
+  siteTitle,
+  siteDescription,
+  openNav,
+  navOpen,
+  animation,
+}) => {
   const setMenuOpenHandler = () => {
     openNav()
   }
 
   return (
-    <header className="me">
+    <animated.header className="me" style={animation}>
       <div className="me-content">
         <div style={{ display: "flex" }}>
           <Link to="/">
@@ -26,7 +33,7 @@ const Header = ({ siteTitle, siteDescription, openNav, navOpen }) => {
           </div>
         </div>
       </div>
-    </header>
+    </animated.header>
   )
 }
 
