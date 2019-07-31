@@ -1,6 +1,15 @@
 /*--------------------------------------------------------------
 # Top Text
 --------------------------------------------------------------*/
+.home-top {
+  background: rgb(65, 65, 65);
+  background: linear-gradient(
+    180deg,
+    rgba(65, 65, 65, 1) 0%,
+    rgba(37, 38, 38, 1) 100%
+  );
+  color: white;
+}
 
 .home-content-container {
   margin: 0 auto;
@@ -8,13 +17,22 @@
   max-width: 1000px;
 }
 
+.triangle {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17px 12px 0 12px;
+  border-color: #252626 transparent transparent transparent;
+}
+
 .home-text {
-  padding: 0 1.5em 1em;
+  padding: 1.5em 1em;
 }
 
 @media only screen and (min-width: 600px) {
   .home-text {
-    padding: 0 1em 1em;
+    padding: 3em 2em 2em;
   }
 }
 
@@ -22,8 +40,12 @@
 # Nav Thumbnails
 --------------------------------------------------------------*/
 
+.home-nav-section {
+  background: white;
+}
+
 .home-nav-container {
-  padding: 0.5em 0 2em;
+  padding: 1.5em 0 2em;
 }
 
 .home-nav-section ul {

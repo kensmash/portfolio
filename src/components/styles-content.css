@@ -41,6 +41,7 @@
 
 .portfolio-info-container {
   padding: 2em 2em 0;
+  background: white;
 }
 
 @media only screen and (min-width: 600px) {
@@ -144,7 +145,7 @@
 footer {
   /*border-top: 1px solid #eee;*/
   padding: 1em 0 1em;
-  /*background: #f8f8f8;*/
+  background: white;
 }
 
 footer p {

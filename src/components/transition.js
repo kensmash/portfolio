@@ -38,7 +38,6 @@ class Transition extends React.PureComponent {
         >
           {status => (
             <main
-              className="content-container"
               style={{
                 ...getTransitionStyles[status],
               }}
