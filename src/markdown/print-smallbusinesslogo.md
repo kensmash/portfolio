@@ -12,7 +12,7 @@ backgroundcolordark: "#2f508f"
 skills:
   [
     { name: "Graphic Design", type: "ux" },
-    { name: "Logo Design", type: "ux" },
+    { name: "Logo Design", type: "logo" },
     { name: "Illustrator", type: "software" },
   ]
 ---

@@ -11,8 +11,8 @@ backgroundcolorlight: "#454544"
 backgroundcolordark: "#212121"
 skills:
   [
-    { name: "Front-End Development", type: "skill" },
-    { name: "React.js", type: "development" },
+    { name: "Front-End Development", type: "code" },
+    { name: "React.js", type: "react" },
   ]
 ---
 

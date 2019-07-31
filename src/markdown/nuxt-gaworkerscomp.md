@@ -11,10 +11,9 @@ backgroundcolorlight: "#212121"
 backgroundcolordark: "#212121"
 skills:
   [
-    { name: "Full-Stack Development", type: "skill" },
-    { name: "Vue.js, Nuxt.js", type: "development" },
-    { name: "Node, Express, MongoDB", type: "development" },
-    { name: "Photoshop", type: "software" },
+    { name: "Full-Stack Development", type: "code" },
+    { name: "Vue.js, Nuxt.js", type: "vue" },
+    { name: "Node, Express, MongoDB", type: "node" },
   ]
 ---
 

@@ -15,9 +15,9 @@ backgroundcolorlight: "#3f0427"
 backgroundcolordark: "#1b0111"
 skills:
   [
-    { name: "WordPress Theme Development", type: "cms" },
-    { name: "UX/UI Design", type: "skill" },
-    { name: "HTML, CSS, PHP", type: "development" },
+    { name: "WordPress Theme Development", type: "wordpress" },
+    { name: "UX/UI Design", type: "ux" },
+    { name: "HTML, CSS, PHP", type: "code" },
     { name: "Photoshop, Illustrator, Sketch", type: "software" },
   ]
 ---
