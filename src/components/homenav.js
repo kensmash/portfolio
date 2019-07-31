@@ -30,7 +30,7 @@ const HomeNav = () => {
     }
   `)
 
-  const recentItems = data.allMarkdownRemark.edges
+  const recentItems = data.allMarkdownRemark.edges.slice(0, 6)
 
   return (
     <nav className="home-nav-container">

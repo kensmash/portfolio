@@ -2,13 +2,11 @@
 # Top Text
 --------------------------------------------------------------*/
 .home-top {
-  background: rgb(65, 65, 65);
-  background: linear-gradient(
-    180deg,
-    rgba(65, 65, 65, 1) 0%,
-    rgba(37, 38, 38, 1) 100%
-  );
+  background: #252626;
+  background: url(../images/gettyimages.jpg);
+  background-size: cover;
   color: white;
+  height: 50vh;
 }
 
 .home-content-container {
@@ -42,6 +40,7 @@
 
 .home-nav-section {
   background: white;
+  height: 50vh;
 }
 
 .home-nav-container {

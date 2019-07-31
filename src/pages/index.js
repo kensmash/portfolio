@@ -22,12 +22,13 @@ const IndexPage = () => (
     </div>
 
     <div className="home-nav-section">
+      <div className="triangle" />
+      <p>Recent work</p>
       <div className="home-content-container">
-        <div className="triangle"></div>
         <HomeNav />
       </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 )
 
