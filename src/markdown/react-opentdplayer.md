@@ -1,5 +1,5 @@
 ---
-title: "Online Trivia Game"
+title: "Trivia Game Website"
 date: "201907-29"
 thumbnailimage: "../images/thumbnails/thumbnail-opentdb.png"
 featuredimage: "../images/featuredimages/featured-image-opentdb.png"

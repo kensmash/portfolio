@@ -17,7 +17,7 @@ const Header = ({ siteTitle, siteDescription, openNav, navOpen }) => {
           <p className="title-desc">{siteDescription}</p>
         </div>
         <div style={{ display: "flex" }} onClick={() => setMenuOpenHandler()}>
-          <p className="title-menu">Menu</p>
+          <p className="title-menu">Work</p>
           <div className={`hamburger-menu ${navOpen ? "open" : "closed"}`}>
             <span></span>
             <span></span>

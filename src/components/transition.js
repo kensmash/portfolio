@@ -9,7 +9,7 @@ const getTransitionStyles = {
   entering: {
     position: `absolute`,
     opacity: 0,
-    transform: `translate3d(0, -100px, 0)`,
+    transform: `translate3d(0, -50px, 0)`,
   },
   entered: {
     transition: `all 600ms ease-out`,
@@ -19,7 +19,7 @@ const getTransitionStyles = {
   exiting: {
     transition: `all ${timeout}ms ease-in`,
     opacity: 0,
-    transform: `translate3d(0, 150px, 0)`,
+    transform: `translate3d(0, 50px, 0)`,
   },
 }
 
