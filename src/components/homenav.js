@@ -5,7 +5,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 const HomeNav = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         totalCount
         edges {
           node {
@@ -32,7 +32,7 @@ const HomeNav = () => {
   `)
 
   const recentItems = data.allMarkdownRemark.edges
-    .filter(item => item.frontmatter.showonhomepage)
+    .filter(item => item.node.frontmatter.showonhomepage)
     .slice(0, 6)
 
   return (

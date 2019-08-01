@@ -1,7 +1,7 @@
 ---
 title: "Church Website"
 date: "201907-22"
-showonhomepage: false
+showonhomepage: true
 thumbnailimage: "../images/thumbnails/thumbnail-church.png"
 homepagethumb: "../images/thumbnails/homepage-church.png"
 featuredimage: "../images/featuredimages/featured-image-fpc.png"
