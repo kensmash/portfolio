@@ -1,6 +1,6 @@
 ---
 title: "Workers’ Compensation Website"
-date: "201907-26"
+date: "201908-01"
 showonhomepage: true
 thumbnailimage: "../images/thumbnails/thumbnail-gaworkers.jpg"
 homepagethumb: "../images/thumbnails/homepage-gaworkers.jpg"

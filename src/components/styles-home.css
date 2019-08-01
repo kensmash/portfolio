@@ -49,6 +49,10 @@
   }
 }
 
+.home-text p {
+  color: #f8f8f8;
+}
+
 .hello {
   display: flex;
   align-items: center;
@@ -110,7 +114,7 @@
 .home-thumbnail:hover,
 .home-thumbnail:focus,
 .home-thumbnail:active {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 /*--------------------------------------------------------------
@@ -121,11 +125,5 @@
   text-align: center;
   font-size: 0.95em;
   padding: 1.5em 0 0;
-}
-
-.homethumb-caption {
-  padding: 0.5em 0.5em 1em;
-  font-size: 0.75em;
-  line-height: 1.4em;
-  text-align: center;
+  color: gray;
 }

@@ -9,8 +9,8 @@ desc: "Newspaper ad and postcard mailer for the Shelby County Democratic party f
 url: ""
 sourcecode: ""
 tag: "print"
-backgroundcolorlight: "#ea464a"
-backgroundcolordark: "#6d060a"
+backgroundcolorlight: "#5c8bcd"
+backgroundcolordark: "#1b56a7"
 skills:
   [
     { name: "Graphic Design", type: "ux" },

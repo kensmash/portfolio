@@ -18,7 +18,6 @@ const IndexPage = () => {
       <div className="home-top">
         <div className="home-text">
           <h1>Hi, I’m Ken.</h1>
-
           <p>
             I’m a graphic and web designer who also enjoys coding (mainly so i
             can build the things that I design.)
