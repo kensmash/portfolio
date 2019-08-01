@@ -7,7 +7,7 @@
   z-index: 100;
   display: flex;
   justify-content: flex-end;
-  margin-top: 40px;
+  margin-top: 42px;
 }
 
 .nav-section {
@@ -20,12 +20,18 @@
 }
 
 @media only screen and (min-width: 600px) {
+  .nav-container {
+    margin-top: 41px;
+  }
   .nav-section {
     width: 270px;
   }
 }
 
 @media only screen and (min-width: 900px) {
+  .nav-container {
+    margin-top: 40px;
+  }
   .nav-section {
     width: 320px;
   }
