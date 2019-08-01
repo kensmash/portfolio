@@ -13,7 +13,7 @@ const IndexPage = () => {
     config: config.slow,
   })
   return (
-    <>
+    <div className="home-background">
       <SEO title="Home" />
       <div className="home-top">
         <div className="home-text">
@@ -40,10 +40,10 @@ const IndexPage = () => {
         <p className="latest-work-title">Below is some of my recent work.</p>
         <div className="home-content-container">
           <HomeNav />
+          <SiteFooter />
         </div>
-        <SiteFooter />
       </animated.div>
-    </>
+    </div>
   )
 }
 
