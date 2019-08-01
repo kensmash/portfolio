@@ -108,7 +108,7 @@
 }
 
 .home-thumbnail img {
-  border-radius: 0em;
+  border-radius: 4px;
 }
 
 .home-thumbnail:hover,

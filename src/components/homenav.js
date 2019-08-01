@@ -43,7 +43,7 @@ const HomeNav = () => {
       <ul>
         {recentItems.map(({ node }) => (
           <li className="home-thumbnail-container" key={node.id}>
-            <Tooltip arrow title={node.frontmatter.title}>
+            <Tooltip arrow title={node.frontmatter.title} theme="light">
               <div className="home-thumbnail">
                 <Link to={node.fields.slug}>
                   <Img
