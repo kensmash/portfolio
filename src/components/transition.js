@@ -7,27 +7,15 @@ import {
 const timeout = 300
 const getTransitionStyles = {
   entering: {
-    position: `absolute`,
-    left: 0,
-    right: 0,
-    margin: "auto",
     opacity: 0,
     transform: `translate3d(0, -50px, 0)`,
   },
   entered: {
-    position: `absolute`,
-    left: 0,
-    right: 0,
-    margin: "auto",
     transition: `all 600ms ease-out`,
     opacity: 1,
     transform: `translate3d(0, 0px, 0)`,
   },
   exiting: {
-    position: `absolute`,
-    left: 0,
-    right: 0,
-    margin: "auto",
     transition: `all ${timeout}ms ease-in`,
     opacity: 0,
     transform: `translate3d(0, 50px, 0)`,
@@ -47,12 +35,12 @@ class Transition extends React.PureComponent {
             exit: timeout,
           }}
           onExit={node => {
-            node.style.position = "fixed"
             node.style.top = -1 * window.scrollY + "px"
           }}
         >
           {status => (
             <main
+              className="main-container"
               style={{
                 ...getTransitionStyles[status],
               }}

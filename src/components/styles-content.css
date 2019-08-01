@@ -1,5 +1,8 @@
-.portfolio-container {
-  position: relative;
+.main-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .content-container {
