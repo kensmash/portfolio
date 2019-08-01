@@ -1,6 +1,7 @@
 ---
 title: "Construction Logo"
 date: "201907-30"
+showonhomepage: true
 thumbnailimage: "../images/thumbnails/thumbnail-logo-ims.png"
 homepagethumb: "../images/thumbnails/homepage-logo-ims.png"
 featuredimage: "../images/featuredimages/featured-image-imslogo.png"

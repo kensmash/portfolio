@@ -1,6 +1,7 @@
 ---
 title: "Trivia Game Website"
-date: "201907-29"
+date: "201908-01"
+showonhomepage: true
 thumbnailimage: "../images/thumbnails/thumbnail-opentdb.png"
 homepagethumb: "../images/thumbnails/homepage-opentdb.png"
 featuredimage: "../images/featuredimages/featured-image-opentdb.png"

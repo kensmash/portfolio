@@ -1,6 +1,7 @@
 ---
 title: "Vision Paper Redesign"
 date: "201907-30"
+showonhomepage: false
 thumbnailimage: "../images/thumbnails/thumbnail-visionpaper.png"
 homepagethumb: "../images/thumbnails/homepage-visionpaper.png"
 featuredimage: "../images/featuredimages/featured-image-visionpaper.png"

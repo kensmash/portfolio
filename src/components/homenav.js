@@ -13,6 +13,7 @@ const HomeNav = () => {
             frontmatter {
               title
               tag
+              showonhomepage
               homepagethumb {
                 childImageSharp {
                   sizes(quality: 70, maxWidth: 300) {
@@ -30,7 +31,9 @@ const HomeNav = () => {
     }
   `)
 
-  const recentItems = data.allMarkdownRemark.edges.slice(0, 6)
+  const recentItems = data.allMarkdownRemark.edges
+    .filter(item => item.frontmatter.showonhomepage)
+    .slice(0, 6)
 
   return (
     <nav className="home-nav-container">

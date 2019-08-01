@@ -1,6 +1,7 @@
 ---
 title: "Election Materials Redesign"
 date: "201907-30"
+showonhomepage: false
 thumbnailimage: "../images/thumbnails/thumbnail-election.png"
 homepagethumb: "../images/thumbnails/homepage-election.png"
 featuredimage: "../images/featuredimages/featured-image-election.png"

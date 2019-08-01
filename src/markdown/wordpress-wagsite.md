@@ -1,6 +1,7 @@
 ---
 title: "Band Website"
 date: "201907-26"
+showonhomepage: true
 thumbnailimage: "../images/thumbnails/thumbnail-wag.png"
 homepagethumb: "../images/thumbnails/homepage-wag.png"
 featuredimage: "../images/featuredimages/featured-image-wag.jpg"

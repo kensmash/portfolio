@@ -1,6 +1,7 @@
 ---
 title: "Comics Experience Print Ad"
 date: "201908-01"
+showonhomepage: false
 thumbnailimage: "../images/thumbnails/thumbnail-cecowl.jpg"
 homepagethumb: "../images/thumbnails/homepage-cecowl.jpg"
 featuredimage: "../images/featuredimages/featured-image-cecowl.jpg"

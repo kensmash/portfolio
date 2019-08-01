@@ -1,6 +1,7 @@
 ---
 title: "Company Branding"
 date: "201908-01"
+showonhomepage: false
 thumbnailimage: "../images/thumbnails/thumbnail-logo-lilygardens.png"
 homepagethumb: "../images/thumbnails/homepage-logo-lilygardens.png"
 featuredimage: "../images/featuredimages/featured-image-lilygardens.png"

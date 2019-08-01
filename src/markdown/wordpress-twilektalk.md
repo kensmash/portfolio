@@ -1,6 +1,7 @@
 ---
 title: "Podcast Website"
 date: "201907-29"
+showonhomepage: true
 thumbnailimage: "../images/thumbnails/thumbnail-twilektalk.jpg"
 homepagethumb: "../images/thumbnails/homepage-twilektalk.jpg"
 featuredimage: "../images/featuredimages/featured-image-twilektalk.jpg"

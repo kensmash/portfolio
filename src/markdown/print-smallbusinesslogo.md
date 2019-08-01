@@ -1,6 +1,7 @@
 ---
 title: "Small Business Logo"
 date: "201907-30"
+showonhomepage: false
 thumbnailimage: "../images/thumbnails/thumbnail-logo-cst.png"
 homepagethumb: "../images/thumbnails/homepage-logo-cst.png"
 featuredimage: "../images/featuredimages/featured-image-cstlogo.png"
