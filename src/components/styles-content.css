@@ -63,7 +63,7 @@
 
   .title-and-info {
     width: calc(100% / 3 * 2);
-    padding: 1em 2em 0;
+    padding: 1em 2em;
   }
 
   .portfolio-title-container {
@@ -163,5 +163,5 @@ footer p {
 }
 
 .footer-source {
-  margin-left: 1em;
+  margin-left: 1.5em;
 }

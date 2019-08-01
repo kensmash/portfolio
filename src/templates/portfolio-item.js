@@ -5,7 +5,7 @@ import { animated, useSpring, config } from "react-spring"
 import Img from "gatsby-image"
 import { FaLink, FaGithub } from "react-icons/fa"
 import Skill from "../components/skill"
-import Footer from "../components/footer"
+import SiteFooter from "../components/sitefooter"
 import SEO from "../components/seo"
 
 export default ({ data }) => {
@@ -103,7 +103,7 @@ export default ({ data }) => {
           />
         </animated.div>
 
-        <Footer />
+        <SiteFooter />
       </div>
     </>
   )

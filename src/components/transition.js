@@ -35,6 +35,7 @@ class Transition extends React.PureComponent {
             exit: timeout,
           }}
           onExit={node => {
+            //jumping fix https://stackoverflow.com/questions/51711969/react-transition-group-react-router-jumps-to-top-of-window-on-route-change
             node.style.top = -1 * window.scrollY + "px"
           }}
         >

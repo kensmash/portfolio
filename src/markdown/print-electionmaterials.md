@@ -17,4 +17,12 @@ skills:
   ]
 ---
 
-![alt text](../images/logos/cst-logos.png "CST logo")
+Quarter page newspaper ad.
+![alt text](../images/print/Election-Ad.png "Election Ad")
+
+Postcard front.
+
+![alt text](../images/print/Election-Postcard.png "Election Postcard")
+
+Postcard back.
+![alt text](../images/print/Election-Postcard-Back.png "Election Postcard")

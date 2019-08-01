@@ -1,6 +1,6 @@
 import React from "react"
 
-const Footer = () => {
+const SiteFooter = () => {
   return (
     <footer>
       <p>
@@ -22,9 +22,12 @@ const Footer = () => {
             GitHub
           </a>
         </span>
+        <span className="footer-source">
+          <a href="mailto:ken@kenfrederick.com">ken@kenfrederick.com</a>
+        </span>
       </p>
     </footer>
   )
 }
 
-export default Footer
+export default SiteFooter

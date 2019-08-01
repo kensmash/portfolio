@@ -1,6 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import HomeNav from "../components/homenav"
+import SiteFooter from "../components/sitefooter"
 
 const IndexPage = () => (
   <>
@@ -16,7 +17,6 @@ const IndexPage = () => (
           I have a special place in my heart for web and app development. Seeing
           people use and interact with things I have built is beyond awesome.
         </p>
-        <p>You can contact me here.</p>
       </div>
     </div>
 
@@ -26,6 +26,7 @@ const IndexPage = () => (
       <div className="home-content-container">
         <HomeNav />
       </div>
+      <SiteFooter />
     </div>
   </>
 )

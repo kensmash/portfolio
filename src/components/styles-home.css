@@ -10,16 +10,22 @@
     rgba(37, 38, 38, 1) 100%
   );
   color: white;
-  height: 47vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .home-top {
+    height: 47vh;
+  }
 }
 
 .home-content-container {
   margin: 0 auto;
   width: 100%;
   max-width: 1000px;
+  padding-bottom: 0.5em;
 }
 
 .triangle {
@@ -34,6 +40,7 @@
 .home-text {
   width: 100%;
   max-width: 600px;
+  padding: 4em 2em 1em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -48,7 +55,12 @@
 
 .home-nav-section {
   background: white;
-  height: 53vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .home-nav-section {
+    height: 53vh;
+  }
 }
 
 .home-nav-container {
