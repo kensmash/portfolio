@@ -3,19 +3,13 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { animated } from "react-spring"
 
-const Header = ({
-  siteTitle,
-  siteDescription,
-  openNav,
-  navOpen,
-  animation,
-}) => {
+const Header = ({ siteTitle, siteDescription, openNav, navOpen }) => {
   const setMenuOpenHandler = () => {
     openNav()
   }
 
   return (
-    <animated.header className="me" style={animation}>
+    <animated.header className="me">
       <div className="me-content">
         <div style={{ display: "flex" }}>
           <Link to="/">
