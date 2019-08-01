@@ -49,6 +49,18 @@
   }
 }
 
+.hello {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello .gatsby-image-wrapper {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+
 /*--------------------------------------------------------------
 # Nav Thumbnails
 --------------------------------------------------------------*/

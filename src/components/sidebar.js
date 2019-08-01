@@ -7,7 +7,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 const SideBar = ({ animation, closeNav }) => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         totalCount
         edges {
           node {
