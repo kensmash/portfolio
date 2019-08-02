@@ -31,7 +31,7 @@
 }
 
 .featured-image-container {
-  padding: 0;
+  padding: 1.75em 1.5em 0;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
@@ -56,6 +56,10 @@
 .portfolio-info-container {
   padding: 2em 2em 0;
   background: white;
+}
+
+.featured-image-container .gatsby-image-wrapper {
+  border-radius: 4px 4px 0 0;
 }
 
 @media only screen and (min-width: 600px) {
