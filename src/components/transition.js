@@ -24,7 +24,7 @@ const getTransitionStyles = {
 
 class Transition extends React.PureComponent {
   render() {
-    const { children, location, noscroll } = this.props
+    const { children, location } = this.props
 
     return (
       <TransitionGroup component={null}>
@@ -41,9 +41,7 @@ class Transition extends React.PureComponent {
         >
           {status => (
             <main
-              className={
-                noscroll ? "main-container noscroll" : "main-container"
-              }
+              className="main-container"
               style={{
                 ...getTransitionStyles[status],
               }}

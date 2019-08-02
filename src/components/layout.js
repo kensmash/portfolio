@@ -27,11 +27,6 @@ const Layout = ({ children, location }) => {
 
   const navOpenHandler = () => {
     setNavOpen(!isNavOpen)
-    if (!isNavOpen) {
-      document.body.classList.add("noscroll")
-    } else {
-      document.body.classList.remove("noscroll")
-    }
   }
 
   const data = useStaticQuery(graphql`
@@ -56,9 +51,7 @@ const Layout = ({ children, location }) => {
         navOpen={isNavOpen}
       />
 
-      <Transition location={location} noscroll={isNavOpen}>
-        {children}
-      </Transition>
+      <Transition location={location}>{children}</Transition>
     </>
   )
 }
