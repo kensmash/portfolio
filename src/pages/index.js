@@ -18,10 +18,7 @@ const IndexPage = () => {
       <div className="home-top">
         <div className="home-text">
           <h1>Hi, I’m Ken.</h1>
-          <p>
-            I’m a graphic and web designer who also enjoys coding (mainly so i
-            can build the things that I design.)
-          </p>
+          <p>I’m a graphic and web designer who also enjoys coding.</p>
           <p>
             I have a special place in my heart for web and app development.
             Seeing people use and interact with things I have built is beyond
