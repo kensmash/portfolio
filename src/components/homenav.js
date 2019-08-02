@@ -1,9 +1,8 @@
 import React from "react"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import { Tooltip } from "react-tippy"
-//tippy css
-import "react-tippy/dist/tippy.css"
+import { isBrowser } from "react-device-detect"
+import Tippy from "@tippy.js/react"
 
 const HomeNav = () => {
   const data = useStaticQuery(graphql`
@@ -43,7 +42,11 @@ const HomeNav = () => {
       <ul>
         {recentItems.map(({ node }) => (
           <li className="home-thumbnail-container" key={node.id}>
-            <Tooltip arrow title={node.frontmatter.title}>
+            <Tippy
+              content={node.frontmatter.title}
+              arrow={true}
+              enabled={isBrowser}
+            >
               <div className="home-thumbnail">
                 <Link to={node.fields.slug}>
                   <Img
@@ -51,7 +54,7 @@ const HomeNav = () => {
                   />
                 </Link>
               </div>
-            </Tooltip>
+            </Tippy>
           </li>
         ))}
       </ul>
