@@ -8,7 +8,7 @@ featuredimage: "../images/featuredimages/featured-image-triviaknight.png"
 desc: "Trivia game app for iOS and Android, built in React Native. To build this app, I first worked out the structure of the MongoDB database. I then built a Node and Express server with a GraphQL API using Apollo Server (source code can be viewed using the “Visit Site” link below). Next, I built a React dashboard site for entering categories and questions into the database, which communicates with the GraphQL API using Apollo Client. Finally, I built the app itself in React Native. The app is currently in beta testing on the iOS App Store and Google Play store. To play the beta for iOS or Android, email me and request an invitation."
 url: ""
 sourcecode: "https://github.com/kensmash/triviaknight-dashboard-v2"
-tag: "app"
+tag: "web"
 backgroundcolorlight: "#212121"
 backgroundcolordark: "#000000"
 skills:
@@ -30,3 +30,7 @@ Games can by started by selecting a game type then selecting from a list of play
 Players can see their individual statistics for questions answered and games played, as well as their standings on the leaderboards.
 
 ![alt text](../images/responsiveimages/responsive-images-triviaknight3.png "Trivia Knight App")
+
+The game question screen. Players have 30 seconds to answer each question.
+
+![alt text](../images/responsiveimages/responsive-images-triviaknight4.png "Trivia Knight App")
